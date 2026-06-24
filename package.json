@@ -1,0 +1,87 @@
+{
+    "name": "laiqon-theme",
+    "displayName": "Laiqon Theme",
+    "publisher": "Laiqon",
+    "author": "Laiqon",
+    "version": "1.0.0",
+    "description": "A modern and elegants themes pack.",
+    "license": "MIT",
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#0F1115",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "extensionKind": ["ui"],
+    "categories": ["Themes"],
+    "keywords": [
+        "theme",
+        "dark",
+        "light",
+        "laiqon",
+        "amethyst",
+        "carbon",
+        "graphite",
+        "sapphire",
+        "ruby",
+        "soft",
+        "productive",
+        "modern"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Laiqon/vscode-laiqon-theme/"
+    },
+    "bugs": {
+        "url": "https://github.com/Laiqon/vscode-laiqon-theme/issues"
+    },
+    "homepage": "https://github.com/Laiqon/",
+    "contributes": {
+        "productIconThemes": [
+            {
+                "id": "laiqon-product-icons",
+                "label": "Laiqon Icons",
+                "path": "./product-icons/laiqon-product-icon-theme.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Laiqon Carbon",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon-carbon.json"
+            },
+            {
+                "label": "Laiqon Amethyst",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon-amethyst.json"
+            },
+            {
+                "label": "Laiqon Graphite",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon-graphite.json"
+            },
+            {
+                "label": "Laiqon",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon.json"
+            },
+            {
+                "label": "Laiqon Light",
+                "uiTheme": "vs",
+                "path": "./themes/laiqon-light.json"
+            },
+            {
+                "label": "Laiqon Sapphire",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon-sapphire.json"
+            },
+            {
+                "label": "Laiqon Ruby",
+                "uiTheme": "vs-dark",
+                "path": "./themes/laiqon-ruby.json"
+            }
+        ]
+    }
+}

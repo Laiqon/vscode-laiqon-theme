@@ -1,0 +1,320 @@
+/***
+    --primary: #FA4F67
+    --depth: #130e10
+**** COMMON COLORS
+    --bg: #141414
+**** TOKEN COLORS (your design system)
+    --code-title:       #b283ec   → Keywords
+    --code-string:      #ff8170   → Strings
+    --code-number:      #d8c97c   → Numbers / Booleans
+    --code-comment:     #7e8c98   → Comments
+    --code-method:      #dabaff   → Functions / Methods
+    --code-preprocessor:#ffa14f   → Attributes / Decorators
+    --code-key:         #ff7ab2   → Properties / Fields
+    --code-pointer:     #78c2b4   → Namespaces
+    --code-enum:        #6bdfff   → Enum members
+    --code-var:         #4eb0cb   → Variables / Parameters / JSX attributes
+    --code-type:        #acf2e4   → Types / Classes / Interfaces / JSX tags
+***/
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Laiqon Ruby",
+    "type": "dark",
+    "include": "./base/dark_plus.json",
+    "colors": {
+        // Title bar
+        "titleBar.activeBackground": "#141414",
+        "titleBar.inactiveBackground": "#141414",
+        "titleBar.border": "#00000000",
+        // Activity bar icons
+        "activityBar.border": "#FA4F6710",
+        "activityBar.background": "#141414",
+        "activityBar.foreground": "#FA4F67",
+        "activityBar.inactiveForeground": "#D6DAE0",
+        "activityBar.activeBorder": "#FA4F67",
+        "activityBarBadge.background": "#FA4F67",
+        "activityBarBadge.foreground": "#FFFFFF",
+        // Breadcrumb path
+        "breadcrumb.background": "#130e10",
+        "breadcrumb.foreground": "#6C727F",
+        "breadcrumb.focusForeground": "#FA4F67",
+        "breadcrumb.activeSelectionForeground": "#FA4F67",
+        // Sidebar (Explorer, etc.)
+        "sideBar.background": "#130e10",
+        "sideBar.border": "#00000000",
+        "sideBarSectionHeader.border": "#FA4F6710",
+        // Tabs
+        "tab.activeBackground": "#130e1090",
+        "tab.activeForeground": "#FA4F67",
+        "tab.activeBorderTop": "#FA4F67",
+        "tab.inactiveBackground": "#130e1050",
+        "tab.inactiveForeground": "#9AA3AD",
+        "tab.hoverBackground": "#FA4F6720",
+        "tab.border": "#141414",
+        // Code editor
+        "editor.background": "#141414",
+        "editor.foreground": "#D6DAE0",
+        "editor.selectionBackground": "#FA4F6710",
+        "editor.selectionHighlightBackground": "#FA4F6720",
+        "editor.findMatchBackground": "#FA4F6759",
+        "editor.findMatchHighlightBackground": "#FA4F6720",
+        "editor.wordHighlightBackground": "#FA4F671A",
+        "editorCursor.foreground": "#FA4F67",
+        // Borders between editors (tabs)
+        "editorGroup.border": "#FA4F6710",
+        "editorGroupHeader.border": "#00000000",
+        "editorGroupHeader.tabsBackground": "#00000000",
+        // Bottom panel (Terminal, Problems, Output, etc.)
+        "panel.background": "#141414",
+        "panel.border": "#FA4F6710",
+        // Bottom status bar
+        "statusBar.background": "#130e10",
+        "statusBar.border": "#FA4F6710",
+        "statusBar.foreground": "#FA4F67",
+        "statusBar.noFolderBackground": "#0e0e0e",
+        "statusBar.debuggingBackground": "#FA4F67",
+        "statusBar.debuggingForeground": "#D6DAE0",
+        // Lists (File Explorer, etc.)
+        "list.hoverBackground": "#FA4F6720",
+        "list.activeSelectionBackground": "#FA4F6750",
+        "list.inactiveSelectionBackground": "#FA4F6720",
+        "list.focusBackground": "#252527",
+        // Scrollbars
+        "scrollbarSlider.background": "#FA4F6790",
+        "scrollbarSlider.hoverBackground": "#FA4F6750",
+        "scrollbarSlider.activeBackground": "#FA4F6780",
+        // Buttons
+        "button.background": "#FA4F6750",
+        "button.foreground": "#D6DAE0",
+        "dropdown.background": "#0e0e0e",
+        "input.background": "#0e0e0e",
+        "textLink.foreground": "#67B5FF",
+        "focusBorder": "#00000000"
+    },
+    "tokenColors": [
+        // ─── COMMENTS ────────────────────────────────────────────────
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "comment.block",
+                "comment.line",
+                "comment.block.documentation",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#7e8c98",
+                "fontStyle": "italic"
+            }
+        },
+        // ─── KEYWORDS ────────────────────────────────────────────────
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "keyword.control.flow",
+                "keyword.operator.new",
+                "keyword.other.using",
+                "keyword.other.var",
+                "storage.modifier",
+                "storage.type.class",
+                "storage.type.interface",
+                "storage.type.enum"
+            ],
+            "settings": {
+                "foreground": "#b283ec"
+            }
+        },
+        // ─── TYPES / CLASSES / INTERFACES ────────────────────────────
+        {
+            "name": "Types, Classes, Interfaces",
+            "scope": [
+                "entity.name.type",
+                "entity.name.class",
+                "entity.name.interface",
+                "entity.name.enum",
+                "support.class",
+                "support.type",
+                "storage.type.primitive"
+            ],
+            "settings": {
+                "foreground": "#acf2e4"
+            }
+        },
+        // ─── FUNCTIONS / METHODS ─────────────────────────────────────
+        {
+            "name": "Functions and Methods",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "meta.function-call entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#dabaff",
+                "fontStyle": "italic"
+            }
+        },
+        // ─── NAMESPACES ───────────────────────────────────────────────
+        {
+            "name": "Namespaces",
+            "scope": [
+                "entity.name.namespace",
+                "entity.name.type.namespace",
+                "storage.type.namespace"
+            ],
+            "settings": {
+                "foreground": "#78c2b4",
+                "fontStyle": "italic"
+            }
+        },
+        // ─── STRINGS ─────────────────────────────────────────────────
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "string.quoted",
+                "string.template"
+            ],
+            "settings": {
+                "foreground": "#ff8170",
+            }
+        },
+        // ─── STRING INTERPOLATION ─────────────────────────────────────
+        {
+            "name": "String interpolation / template expression",
+            "scope": [
+                "meta.interpolation",
+                "punctuation.definition.template-expression",
+                "string.template meta.template.expression"
+            ],
+            "settings": {
+                "foreground": "#ff8170",
+                "fontStyle": ""
+            }
+        },
+        // ─── PARAMETERS ──────────────────────────────────────────────
+        {
+            "name": "Parameters",
+            "scope": [
+                "variable.parameter",
+                "meta.function.parameters variable.other"
+            ],
+            "settings": {
+                "foreground": "#4eb0cb"
+            }
+        },
+        // ─── PROPERTIES ──────────────────────────────────────────────
+        {
+            "name": "Properties and fields",
+            "scope": [
+                "variable.other.property",
+                "variable.other.object.property",
+                "support.variable.property",
+                "meta.object-literal.key",
+                "entity.name.variable.field"
+            ],
+            "settings": {
+                "foreground": "#ff7ab2"
+            }
+        },
+        // ─── VARIABLES ───────────────────────────────────────────────
+        {
+            "name": "Variables",
+            "scope": [
+                "variable",
+                "variable.other",
+                "variable.other.readwrite"
+            ],
+            "settings": {
+                "foreground": "#4eb0cb"
+            }
+        },
+        // ─── NUMBERS / BOOLEANS ──────────────────────────────────────
+        {
+            "name": "Numbers and booleans",
+            "scope": [
+                "constant.numeric",
+                "constant.language.boolean",
+                "constant.language.null",
+                "constant.language.undefined",
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#d8c97c"
+            }
+        },
+        // ─── ATTRIBUTES (C# / decorators) ────────────────────────────
+        {
+            "name": "Attributes and decorators",
+            "scope": [
+                "entity.name.type.attribute",
+                "storage.type.attribute",
+                "meta.attribute entity.name.function",
+                "punctuation.decorator",
+                "meta.decorator entity.name.function",
+                "meta.decorator variable.other"
+            ],
+            "settings": {
+                "foreground": "#ffa14f"
+            }
+        },
+        // ─── JSX TAGS (html elements) ────────────────────────────────
+        {
+            "name": "JSX/TSX — HTML tags",
+            "scope": [
+                "entity.name.tag",
+                "support.class.component",
+                "punctuation.definition.tag"
+            ],
+            "settings": {
+                "foreground": "#acf2e4"
+            }
+        },
+        // ─── JSX ATTRIBUTES ──────────────────────────────────────────
+        {
+            "name": "JSX/TSX — attributes",
+            "scope": [
+                "entity.other.attribute-name",
+                "meta.jsx.children entity.other.attribute-name"
+            ],
+            "settings": {
+                "foreground": "#4eb0cb"
+            }
+        },
+        // ─── ENUM MEMBERS ─────────────────────────────────────────────
+        {
+            "name": "Enum members",
+            "scope": [
+                "variable.other.enummember"
+            ],
+            "settings": {
+                "foreground": "#6bdfff"
+            }
+        },
+        // ─── PUNCTUATION ─────────────────────────────────────────────
+        {
+            "name": "Punctuation",
+            "scope": [
+                "punctuation",
+                "meta.brace",
+                "punctuation.separator",
+                "punctuation.terminator"
+            ],
+            "settings": {
+                "foreground": "#5C5C64"
+            }
+        },
+        // ─── OPERATORS ───────────────────────────────────────────────
+        {
+            "name": "Operators",
+            "scope": [
+                "keyword.operator",
+                "storage.type.function.arrow"
+            ],
+            "settings": {
+                "foreground": "#5C5C64"
+            }
+        }
+    ]
+}
