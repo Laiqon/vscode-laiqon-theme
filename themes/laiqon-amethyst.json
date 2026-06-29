@@ -1,20 +1,20 @@
-/***
+﻿/***
     --primary: #7A5AF8
-    --depth: #0d0c10
+    --depth: #0D0C10
 **** COMMON COLORS
     --bg: #141414
 **** TOKEN COLORS (your design system)
-    --code-title:       #b283ec   → Keywords
-    --code-string:      #ff8170   → Strings
-    --code-number:      #d8c97c   → Numbers / Booleans
-    --code-comment:     #7e8c98   → Comments
-    --code-method:      #dabaff   → Functions / Methods
-    --code-preprocessor:#ffa14f   → Attributes / Decorators
-    --code-key:         #ff7ab2   → Properties / Fields
-    --code-pointer:     #78c2b4   → Namespaces
-    --code-enum:        #6bdfff   → Enum members
-    --code-var:         #4eb0cb   → Variables / Parameters / JSX attributes
-    --code-type:        #acf2e4   → Types / Classes / Interfaces / JSX tags
+    --code-title:       #B283EC   → Keywords
+    --code-string:      #FF8170   → Strings
+    --code-number:      #D8C97C   → Numbers / Booleans
+    --code-comment:     #7E8C98   → Comments
+    --code-method:      #DABAFF   → Functions / Methods
+    --code-preprocessor:#FFA14F   → Attributes / Decorators
+    --code-key:         #FF7AB2   → Properties / Fields
+    --code-pointer:     #78C2B4   → Namespaces
+    --code-enum:        #6BDFFF   → Enum members
+    --code-var:         #4EB0CB   → Variables / Parameters / JSX attributes
+    --code-type:        #ACF2E4   → Types / Classes / Interfaces / JSX tags
 ***/
 {
     "$schema": "vscode://schemas/color-theme",
@@ -35,19 +35,19 @@
         "activityBarBadge.background": "#7A5AF8",
         "activityBarBadge.foreground": "#FFFFFF",
         // Breadcrumb path
-        "breadcrumb.background": "#0d0c10",
+        "breadcrumb.background": "#0D0C10",
         "breadcrumb.foreground": "#6C727F",
         "breadcrumb.focusForeground": "#7A5AF8",
         "breadcrumb.activeSelectionForeground": "#7A5AF8",
         // Sidebar (Explorer, etc.)
-        "sideBar.background": "#0d0c10",
+        "sideBar.background": "#0D0C10",
         "sideBar.border": "#00000000",
         "sideBarSectionHeader.border": "#7A5AF810",
         // Tabs
-        "tab.activeBackground": "#0d0c1090",
+        "tab.activeBackground": "#0D0C1090",
         "tab.activeForeground": "#7A5AF8",
         "tab.activeBorderTop": "#7A5AF8",
-        "tab.inactiveBackground": "#0d0c1050",
+        "tab.inactiveBackground": "#0D0C1050",
         "tab.inactiveForeground": "#9AA3AD",
         "tab.hoverBackground": "#7A5AF820",
         "tab.border": "#141414",
@@ -68,10 +68,10 @@
         "panel.background": "#141414",
         "panel.border": "#7A5AF810",
         // Bottom status bar
-        "statusBar.background": "#0d0c10",
+        "statusBar.background": "#0D0C10",
         "statusBar.border": "#7A5AF810",
         "statusBar.foreground": "#7A5AF8",
-        "statusBar.noFolderBackground": "#0e0e0e",
+        "statusBar.noFolderBackground": "#0E0E0E",
         "statusBar.debuggingBackground": "#7A5AF8",
         "statusBar.debuggingForeground": "#D6DAE0",
         // Lists (File Explorer, etc.)
@@ -86,8 +86,8 @@
         // Buttons
         "button.background": "#7A5AF850",
         "button.foreground": "#D6DAE0",
-        "dropdown.background": "#0e0e0e",
-        "input.background": "#0e0e0e",
+        "dropdown.background": "#0E0E0E",
+        "input.background": "#0E0E0E",
         "textLink.foreground": "#67B5FF",
         "focusBorder": "#00000000"
     },
@@ -103,7 +103,7 @@
                 "punctuation.definition.comment"
             ],
             "settings": {
-                "foreground": "#7e8c98",
+                "foreground": "#7E8C98",
                 "fontStyle": "italic"
             }
         },
@@ -123,7 +123,7 @@
                 "storage.type.enum"
             ],
             "settings": {
-                "foreground": "#b283ec"
+                "foreground": "#B283EC"
             }
         },
         // ─── TYPES / CLASSES / INTERFACES ────────────────────────────
@@ -139,7 +139,7 @@
                 "storage.type.primitive"
             ],
             "settings": {
-                "foreground": "#acf2e4"
+                "foreground": "#ACF2E4"
             }
         },
         // ─── FUNCTIONS / METHODS ─────────────────────────────────────
@@ -151,7 +151,7 @@
                 "meta.function-call entity.name.function"
             ],
             "settings": {
-                "foreground": "#dabaff",
+                "foreground": "#DABAFF",
                 "fontStyle": "italic"
             }
         },
@@ -164,7 +164,7 @@
                 "storage.type.namespace"
             ],
             "settings": {
-                "foreground": "#78c2b4",
+                "foreground": "#78C2B4",
                 "fontStyle": "italic"
             }
         },
@@ -177,7 +177,7 @@
                 "string.template"
             ],
             "settings": {
-                "foreground": "#ff8170",
+                "foreground": "#FF8170",
             }
         },
         // ─── STRING INTERPOLATION ─────────────────────────────────────
@@ -189,7 +189,7 @@
                 "string.template meta.template.expression"
             ],
             "settings": {
-                "foreground": "#ff8170",
+                "foreground": "#FF8170",
                 "fontStyle": ""
             }
         },
@@ -201,7 +201,7 @@
                 "meta.function.parameters variable.other"
             ],
             "settings": {
-                "foreground": "#4eb0cb"
+                "foreground": "#4EB0CB"
             }
         },
         // ─── PROPERTIES ──────────────────────────────────────────────
@@ -215,7 +215,7 @@
                 "entity.name.variable.field"
             ],
             "settings": {
-                "foreground": "#ff7ab2"
+                "foreground": "#FF7AB2"
             }
         },
         // ─── VARIABLES ───────────────────────────────────────────────
@@ -227,7 +227,7 @@
                 "variable.other.readwrite"
             ],
             "settings": {
-                "foreground": "#4eb0cb"
+                "foreground": "#4EB0CB"
             }
         },
         // ─── NUMBERS / BOOLEANS ──────────────────────────────────────
@@ -241,7 +241,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#d8c97c"
+                "foreground": "#D8C97C"
             }
         },
         // ─── ATTRIBUTES (C# / decorators) ────────────────────────────
@@ -256,7 +256,7 @@
                 "meta.decorator variable.other"
             ],
             "settings": {
-                "foreground": "#ffa14f"
+                "foreground": "#FFA14F"
             }
         },
         // ─── JSX TAGS (html elements) ────────────────────────────────
@@ -268,7 +268,7 @@
                 "punctuation.definition.tag"
             ],
             "settings": {
-                "foreground": "#acf2e4"
+                "foreground": "#ACF2E4"
             }
         },
         // ─── JSX ATTRIBUTES ──────────────────────────────────────────
@@ -279,7 +279,7 @@
                 "meta.jsx.children entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#4eb0cb"
+                "foreground": "#4EB0CB"
             }
         },
         // ─── ENUM MEMBERS ─────────────────────────────────────────────
@@ -289,7 +289,7 @@
                 "variable.other.enummember"
             ],
             "settings": {
-                "foreground": "#6bdfff"
+                "foreground": "#6BDFFF"
             }
         },
         // ─── PUNCTUATION ─────────────────────────────────────────────

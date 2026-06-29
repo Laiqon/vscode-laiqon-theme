@@ -38,7 +38,7 @@ A modern and elegants themes pack.
 ### Laiqon Light
 ![Laiqon Light](https://github.com/Laiqon/vscode-laiqon-theme/blob/main/media/Laiqon-Light.png?raw=true)
 
-## ⚙️ Recommended Font
+## Recommended Font
 
 If you want my settings, install 'Dank Mono' and 'JetBrainsMono Nerd Font Mono' fonts, and set your editor in **settings.json**:
 
